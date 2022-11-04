@@ -155,7 +155,7 @@ header .nav-menu-right{
     color: white;
     grid-row-gap: 35px;
     justify-content: space-evenly;
-    background-image: url(fotos/Mmates.jpg);
+    background-image: url(../fotos/Mmates.jpg);
     background-size: 200%;
     animation: movimiento 10s infinite linear alternate;
     
