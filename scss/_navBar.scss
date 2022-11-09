@@ -1,0 +1,16 @@
+.navbar {
+	background-color: #000000;
+	.navbar-nav {
+		.nav-link {
+			&:not(.disabled) {
+				&:hover {
+					color: #ffffff;
+				}
+				&:focus {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}
+
