@@ -1,6 +1,11 @@
 // Variables
 @import "utilities/variables";
 
+// Partials
+@import 'partials/navBar';
+@import 'partials/buttonWsp';
+
+
 // Pages 
 @import "pages/home";
 @import "pages/mates";
