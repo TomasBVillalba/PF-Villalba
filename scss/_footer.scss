@@ -10,7 +10,7 @@ footer {
         text-align: center;
         width: auto;
         margin: auto;
-        background-color: #f7f9f9;
+        background-color: #1a1a1a;
     }
 
     .box-footer {
@@ -19,7 +19,7 @@ footer {
         padding: 40px;
     }
 
-    .box-footer h2 {
+    .box-footer h2, p {
         margin-bottom: 30px;
         color: $color-h2;
         font-weight: 700;

@@ -1,16 +1,148 @@
 .navbar {
-	background-color: #000000;
-	.navbar-nav {
-		.nav-link {
-			&:not(.disabled) {
-				&:hover {
-					color: #ffffff;
-				}
-				&:focus {
-					color: #ffffff;
-				}
-			}
-		}
+	min-height: 80px;
+	font-weight: bold;
+	z-index: 2;
+}
+.boton-centrado-mobile {
+	display: none;
+}
+.boton-centrado-desktop {
+	display: flex;
+	justify-content: space-between;
+}
+.carrito{
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	top: 0;
+	right: 0;
+	position: absolute;
+	background: #1a1a1a;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	border-radius: 50%;
+}
+
+.buscar {
+	position: relative;
+	padding: 5px;
+	input {
+		width: 0;
+		height: 40px;
+		padding: 0 20px;
+		font-size: 18px;
+		color: #222;
+		outline: none;
+		border: 1px solid silver;
+		border-radius: 30px;
+		transition: all 0.6s ease;
 	}
 }
 
+.form-control {
+	display: inline;
+	margin-right: 60px;
+}
+.boton {
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	top: 0;
+	right: 60px;
+	position: absolute;
+	background: #1a1a1a;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.buscar:hover input {
+	width: 240px;
+}
+
+.buscar input:focus {
+	width: 240px;
+	
+}
+
+.nav-link {
+
+	color: #1a1a1a;
+
+	&:hover {
+		color: #1a1a1a;
+	}
+}
+
+.logo-brand {
+	min-width: 90px;
+	max-width: 90px;
+}
+
+.navbar-toggler {
+	font-size: 40px;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+// MEDIA QUERIES 
+@media (max-width: 575.98px) {
+	.boton-centrado-desktop {
+		display: none;
+	}
+
+	.boton-centrado-mobile {
+		display: inline;
+		margin-bottom: 55px;
+		margin-left: 185px;
+		
+	}
+
+	.boton-centrado-mobile, .boton {
+		margin-top: 10px;
+		
+	}
+
+	.carrito{
+		width:45px;
+		height:45px;
+		line-height:45px;
+		position: absolute;
+		background: #1a1a1a;
+		text-align: center;
+		color: white;
+		font-size: 18px;
+		border-radius: 50%;
+	}
+
+	.boton {
+		width:45px;
+		height:45px;
+		line-height:45px;
+		position: absolute;
+		background: #1a1a1a;
+		text-align: center;
+		color: white;
+		font-size: 18px;
+		border-radius: 50%;
+	}	
+
+	.form-control {
+		display: none;
+		margin-right: none;
+	}
+
+	.buscar:hover input {
+		width: none;
+	}
+	
+	.buscar input:focus {
+		width: nonex;
+		
+	}
+}
